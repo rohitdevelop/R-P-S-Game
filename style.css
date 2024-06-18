@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 47, 47);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6vw; /* Adjust based on preference */
+    margin-top: 3rem; /* Adjust margin as needed */
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 4vw; /* Adjust gap between choices */
+    margin: 2rem 5vw 5rem; /* Adjust margins */
+}
+
+.choice {
+    flex: 1; /*Each choice takes equal space */
+    max-width: 100%; /* Ensure choices don't overflow */
+    transition: transform 0.2s ease-out;
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Adjust scaling factor */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px rgb(252, 252, 244); /* Adjust box shadow */
+    mix-blend-mode: lighten;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing */
+    align-items: center;
+    font-size: 4vw; /* Adjust font size */
+    margin-top: 3rem; /* Adjust margin */
+}
+
+.msg-container {
+    margin-top: 4rem; /* Adjust margin */
+}
+
+#msg {
+    display: inline-block;
+    font-size: 3vw; /* Adjust font size */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background */
+    padding: 1vw 2vw; /* Adjust padding */
+    border-radius: 2vw; /* Adjust border radius */
+    box-shadow: 0 0 20px rgb(23, 200, 249);
+}
